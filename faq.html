@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FAQ | Ergo Reminder</title>
+    <meta name="description" content="Frequently asked questions about Ergo Reminder.">
+    <link rel="stylesheet" href="assets/styles.css">
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header">
+        <div class="header-inner">
+          <a class="brand" href="index.html">
+            <span class="brand-mark"><img src="assets/icon-mark.svg" alt="" aria-hidden="true"></span>
+            <span class="brand-text"><strong>Ergo Reminder</strong><span>Protect your Neck</span></span>
+          </a>
+          <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-nav">Menu</button>
+          <nav class="site-nav" id="site-nav" data-nav aria-label="Primary">
+            <ul>
+              <li><a data-nav-link href="index.html">Home</a></li>
+              <li><a data-nav-link href="features.html">Features</a></li>
+              <li><a data-nav-link href="privacy.html">Privacy Policy</a></li>
+              <li><a data-nav-link href="support.html">Support</a></li>
+              <li><a data-nav-link href="faq.html">FAQ</a></li>
+              <li><a data-nav-link href="contact.html">Contact</a></li>
+              <li><a data-nav-link href="release-notes.html">Release Notes</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <main class="content">
+        <h1 class="page-title">FAQ</h1>
+        <p class="lead">Short answers to the most common questions about how Ergo Reminder works.</p>
+
+        <section class="faq-list">
+          <article class="faq-item">
+            <h3>Does Ergo Reminder detect scrolling?</h3>
+            <p>No. It only tracks foreground time in the apps you selected.</p>
+          </article>
+          <article class="faq-item">
+            <h3>Can it see what I am reading or typing?</h3>
+            <p>No. It does not inspect screen contents, browser tabs, messages, or typed text.</p>
+          </article>
+          <article class="faq-item">
+            <h3>Does it block apps or force breaks?</h3>
+            <p>No. The reminder overlay is informational and dismissible.</p>
+          </article>
+          <article class="faq-item">
+            <h3>Where is my data stored?</h3>
+            <p>On your device. Ergo Reminder is local-first and does not use cloud sync.</p>
+          </article>
+          <article class="faq-item">
+            <h3>Why does the timer sometimes reset a little late?</h3>
+            <p>The app polls foreground status once per second, so the reset window can feel slightly jittery.</p>
+          </article>
+          <article class="faq-item">
+            <h3>What permissions does the app need?</h3>
+            <p>Usage Access to detect the foreground app, overlay permission to show reminders, and optional battery optimization exemption for reliability.</p>
+          </article>
+          <article class="faq-item">
+            <h3>Is crash reporting on by default?</h3>
+            <p>No. Crash reporting stays off unless you explicitly opt in.</p>
+          </article>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="site-footer-inner">
+          <span>Ergo Reminder</span>
+          <div class="footer-links">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="support.html">Support</a>
+            <a href="release-notes.html">Release Notes</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="assets/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Support | Ergo Reminder</title>
+    <meta name="description" content="Support information and known limitations for Ergo Reminder.">
+    <link rel="stylesheet" href="assets/styles.css">
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header">
+        <div class="header-inner">
+          <a class="brand" href="index.html">
+            <span class="brand-mark"><img src="assets/icon-mark.svg" alt="" aria-hidden="true"></span>
+            <span class="brand-text"><strong>Ergo Reminder</strong><span>Protect your Neck</span></span>
+          </a>
+          <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-nav">Menu</button>
+          <nav class="site-nav" id="site-nav" data-nav aria-label="Primary">
+            <ul>
+              <li><a data-nav-link href="index.html">Home</a></li>
+              <li><a data-nav-link href="features.html">Features</a></li>
+              <li><a data-nav-link href="privacy.html">Privacy Policy</a></li>
+              <li><a data-nav-link href="support.html">Support</a></li>
+              <li><a data-nav-link href="faq.html">FAQ</a></li>
+              <li><a data-nav-link href="contact.html">Contact</a></li>
+              <li><a data-nav-link href="release-notes.html">Release Notes</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <main class="content">
+        <h1 class="page-title">Support</h1>
+        <p class="lead">A few boundaries are intentional. Others come from Android itself.</p>
+
+        <section class="page-panel">
+          <h2>Known limitations</h2>
+          <ul>
+            <li>No scroll detection. Ergo Reminder intentionally tracks foreground app time only.</li>
+            <li>No browser-tab awareness. Android usage APIs can identify the foreground app, but not reliably which Chrome tab, web page, or in-app content is being viewed.</li>
+            <li>No app-specific content detection. Distinguishing YouTube Shorts from ordinary YouTube viewing, or productive browsing from doomscrolling inside the same app, would require brittle, unsupported behavior and is outside the MVP.</li>
+            <li>No cloud sync. The app is intentionally local-first.</li>
+            <li>No schedules, posture camera, or advanced adherence analytics. Those are out of scope for the MVP.</li>
+            <li>OEM battery managers may interrupt monitoring. This is most common on Xiaomi / HyperOS / MIUI, Huawei, Oppo / Realme, Vivo, and some Samsung devices.</li>
+            <li>English only.</li>
+            <li>The 30-second reset window can feel slightly jittery because foreground detection is polled once per second rather than continuously.</li>
+          </ul>
+        </section>
+
+        <section class="page-panel">
+          <h2>Troubleshooting basics</h2>
+          <ul>
+            <li>Confirm Usage Access is still granted.</li>
+            <li>Confirm overlay permission is still granted.</li>
+            <li>Confirm the apps you expect to monitor are still selected.</li>
+            <li>On some devices, optional battery optimization exemption can improve reliability.</li>
+            <li>If Android force-stops the app, monitoring will stop until the app is opened again.</li>
+          </ul>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="site-footer-inner">
+          <span>Ergo Reminder</span>
+          <div class="footer-links">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="support.html">Support</a>
+            <a href="release-notes.html">Release Notes</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="assets/app.js"></script>
+  </body>
+</html>
