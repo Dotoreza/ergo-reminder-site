@@ -2,15 +2,18 @@
 
 Static marketing and support site for Ergo Reminder.
 
+Production domain: `https://protectyourneck.us`
+
 ## Pages
 
-- `index.html` - Home
-- `features.html` - Features
-- `privacy.html` - Privacy Policy
+- `index.html` - Home / primary product pitch
+- `features.html` - MVP feature overview
+- `privacy.html` - Privacy policy
 - `support.html` - Support and known limitations
 - `faq.html` - Frequently asked questions
-- `contact.html` - Contact placeholder
-- `release-notes.html` - Release notes placeholder
+- `contact.html` - Contact page
+- `release-notes.html` - Public release notes
+- `404.html` - Not found page
 
 ## Stack
 
@@ -22,7 +25,9 @@ Static marketing and support site for Ergo Reminder.
 
 Open any page directly in a browser, or serve the folder with a simple static server.
 
-## Git / Deployment
+## Deployment Notes
 
-This folder is intended to become its own GitHub repository and later deploy to Cloudflare Pages.
+- Hosted on Cloudflare Pages
+- No build step required
+- `robots.txt` and `sitemap.xml` are committed directly for the production domain
 

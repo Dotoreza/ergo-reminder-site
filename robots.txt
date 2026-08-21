@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://protectyourneck.us/sitemap.xml
