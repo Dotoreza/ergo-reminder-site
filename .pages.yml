@@ -1,4 +1,7 @@
-# Example .pages.yml
+media:
+  input: images         # Folder where uploaded photos/assets go
+  output: /assets
+  
 content:
   - name: pages
     label: Site Pages
