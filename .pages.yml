@@ -1,0 +1,16 @@
+media:
+  input: images         # Folder where uploaded photos/assets go
+  output: /assets
+  
+content:
+  - name: pages
+    label: Site Pages
+    type: collection
+    path: "/"            # Look in the root folder
+    match: "*.html"      # Match HTML files
+    view:
+      fields: [title]
+    fields:
+      - name: body
+        label: Page Content
+        type: rich-text  # Opens a visual WYSIWYG editor
