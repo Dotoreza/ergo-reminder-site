@@ -51,23 +51,24 @@
           <ul>
             <li>No scroll detection. Ergo Reminder intentionally tracks foreground app time only.</li>
             <li>No browser-tab awareness. Android usage APIs can identify the foreground app, but not reliably which Chrome tab, web page, or in-app content is being viewed.</li>
-            <li>No app-specific content detection. Distinguishing YouTube Shorts from ordinary YouTube viewing, or productive browsing from doomscrolling inside the same app, would require brittle, unsupported behavior and is outside the MVP.</li>
+            <li>No app-specific content detection. See above; Ergo does not 'see' inside the app, just that it's in the foreground.</li>
             <li>No cloud sync. The app is intentionally local-first.</li>
-            <li>No schedules, posture camera, or advanced adherence analytics. Those are out of scope for the MVP.</li>
+            <li>No schedules, posture camera, or advanced adherence analytics. See <a href="https://www.youtube.com/results?search_query=neck+posture+exercises" target="_blank" rel="noopener noreferrer" style="text-decoration: underline;">here</a> if you need help on how to stretch your neck.</li>
             <li>OEM battery managers may interrupt monitoring. This is most common on Xiaomi / HyperOS / MIUI, Huawei, Oppo / Realme, Vivo, and some Samsung devices.</li>
             <li>English only.</li>
-            <li>The 30-second reset window can feel slightly jittery because foreground detection is polled once per second rather than continuously.</li>
+            <li>The 30-second reset window can feel slightly jittery because foreground detection is polled once per second, rather than continuously.</li>
           </ul>
         </section>
 
         <section class="page-panel">
           <h2>Troubleshooting basics</h2>
           <ul>
-            <li>Confirm Usage Access is still granted.</li>
-            <li>Confirm overlay permission is still granted.</li>
+            <li>Confirm that the Usage Access permission is still granted.</li>
+            <li>Confirm that the Overlay Permission is still granted.</li>
+            <li>Press the 'Re-check Permissions' button.</li>
             <li>Confirm the apps you expect to monitor are still selected.</li>
             <li>On some devices, optional battery optimization exemption can improve reliability.</li>
-            <li>If Android force-stops the app, monitoring will stop until the app is opened again.</li>
+            <li>If Android force-stops the app, the monitoring will switch to 'Off'. Open the app and click 'Start Monitoring' to start again.</li>
           </ul>
         </section>
       </main>
