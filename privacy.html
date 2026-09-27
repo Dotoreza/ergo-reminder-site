@@ -115,7 +115,7 @@
             <li>whether battery optimization exemption has been prompted</li>
             <li>whether monitoring is enabled</li>
             <li>whether you opted in to crash reporting</li>
-            <li>your Premium status and local purchase entitlement token</li>
+            <li>your Premium status and an authenticated local entitlement record containing a hash of the purchase token.</li>
             <li>a rolling 90-day local history of your break and reminder events, if you have purchased the Premium version.</li>
           </ul>
           <p>This information is stored locally and is not uploaded to us.</p>
@@ -130,6 +130,7 @@
             <li>device model</li>
             <li>Android version</li>
             <li>app version</li>
+            <li>SDK installation identifiers</li>
             <li>stack traces</li>
             <li>technical crash context</li>
           </ul>
@@ -158,7 +159,7 @@
             We do not collect, process, or store your credit card details, billing address, or financial payment information.
           </p>
           <p>
-            Google Play handles purchase verification and provides an authenticated entitlement record containing a hash of the purchase token to your device so the app can unlock Premium features offline.
+            Google Play handles purchase verification and provides purchase information that Ergo uses to check and acknowledge Premium ownership. Ergo creates an authenticated local entitlement record containing a hash of the purchase token, allowing previously verified Premium access to work offline.
           </p>
           <h2>Data Sharing</h2>
           <p>We do not share your app usage data with third parties.</p>
